@@ -1,17 +1,44 @@
 {
 	"pages": [{
-		"path": "pages/index/index",
-		"style": {
-			"navigationBarTitleText": "uni-app"
-		}
-	}],
+            "path" : "pages/days/days",
+            "style" :                                                                                    
+            {
+                
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/months/months",
+            "style" :                                                                                    
+            {
+               
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "人生流水账",
+		"navigationBarBackgroundColor": "#F49F97",
 		"backgroundColor": "#F8F8F8",
 		"app-plus": {
 			"background": "#efeff4"
 		}
+	},
+	"tabBar": {
+		"list": [
+			{
+				"pagePath": "pages/days/days",
+				"iconPath": "static/tab_icons/day-active.png",
+				"selectedIconPath": "static/tab_icons/day.png"
+			},
+			{
+				"pagePath": "pages/months/months",
+				"iconPath": "static/tab_icons/month-active.png",
+				"selectedIconPath": "static/tab_icons/month.png"
+			}
+		]
 	}
 }
